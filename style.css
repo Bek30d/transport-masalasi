@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+select, button {
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+select:focus, button:focus {
+    outline: none;
+    border-color: #00796b;
+    box-shadow: 0 0 5px rgba(0, 121, 107, 0.5);
+}
+
+button {
+    background-color: #00796b;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+
+#carDetails, #result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#carDetailsList {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+#carDetailsList li {
+    margin: 5px 0;
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#carDetailsList li:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.02);
+}
+
+#carDetailsList li.selected {
+    background-color: #e0f7fa;
+    border-color: #00796b;
+    color: #00796b;
+}
+
+#result p {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #333;
+}

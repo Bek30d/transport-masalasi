@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yo'l Safari Kalkulyatori</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Yo'l Safari Xarajatlari va Vaqti Kalkulyatori</h1>
+        <div id="carDetails">
+            <h2>Mashina Tafsilotlari</h2>
+            <ul id="carDetailsList"></ul>
+        </div>
+        <form id="calculatorForm">
+            <label for="carSelect">Mashina tanlang:</label>
+            <select id="carSelect" onchange="showCarDetails()">
+                <option value="Isuzu">Isuzu</option>
+                <option value="Mers">Mers</option>
+                <option value="JAC">JAC</option>
+                <option value="Ikarus">Ikarus</option>
+            </select>
+
+            <label for="roadSelect">Yo'lni tanlang:</label>
+            <select id="roadSelect">
+                <option value="Yunusobod">Yunusobod</option>
+                <option value="Chilonzor">Chilonzor</option>
+                <option value="Sergeli">Sergeli</option>
+                <option value="Olmazor">Olmazor</option>
+            </select>
+
+            <button type="button" onclick="calculateCostAndTime()">Hisoblash</button>
+        </form>
+
+        
+
+        <div id="result">
+            <p id="timeResult"></p>
+            <p id="costResult"></p>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
